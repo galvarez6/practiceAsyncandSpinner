@@ -16,6 +16,7 @@ public class AsyncTask  extends android.os.AsyncTask<Void,Void,Void> {
     protected void onPreExecute() {
         super.onPreExecute();
         loadingDialog = new LoadingDialog(activity);
+        loadingDialog.startLoadingDialog();
     }
 
 
